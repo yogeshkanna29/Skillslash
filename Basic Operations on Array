@@ -1,0 +1,72 @@
+/** Basic Operations on Array **/
+
+const arr = [10, 20, 30, 49, 50];
+/** Traverse the array from beggining **/
+// Find value 30
+const val = 30;
+for(var i = 0; i < arr.length; i++){
+    if(arr[i] == val){
+        console.log("Array value found : ", val ," In  index of : " , i);
+    }
+}
+
+/** Traverse the array from the End **/
+for(var i = arr.length; i >= 0; i--){
+    let val = 40;
+    if(arr[i] == val){
+        console.log("Array value found : ", val ," In  index of : " , i);
+    }
+}
+
+/** Traverse the array from the two pointers **/
+for(var i = 0; i < arr.length; i++){
+    console.log("i val : ", i);
+    i = i+1;
+}
+for(var j = arr.length; j >= 0; j--){
+    console.log("j val : ", j);
+}
+
+/** Traverse array with some conditions **/
+for(var i = 0; i < arr.length; i++){
+    if(arr[i] % 2 == 0){
+        console.log("some conditions EVEN : ", arr[i]);
+    } else{
+        console.log("some conditions -ODD : ", arr[i]);
+    }
+}
+
+/** Insertion an element at end of the array **/
+
+// let arr = [10, 20, 30, 49, 50]; 
+/** insert '60' // push(); **/
+console.log(arr.length);
+arr[arr.length - 1] = "60";
+console.log("Insertion at end of the array : ", arr);
+
+/** Insertion an element in the given place in the array **/
+/** insert at index 2 */
+arr[2] = '35';
+console.log(arr);
+/** insert at the valued 49 **/
+for(var i = 0; i < arr.length; i++){
+    if(arr[i] == '49'){
+        arr[i] = '48';
+    }
+}
+console.log(arr);
+
+/** Deletion an element from the end of the array **/
+
+let arr = [10, 25, 30, 49, 50];
+arr[arr.length - 1] = ''; // pop();
+console.log(arr);
+
+/** Deletion an element at an index in the array **/
+/** Delete 30 **/
+for(var i = 0; i < arr.length; i++){
+    if(arr[i] == 30){
+        arr[i] = 35;
+        console.log(arr);
+    }
+}
